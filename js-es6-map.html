@@ -4,13 +4,28 @@ const users = [
 	{ firstname: "Fred", lastname: "Kruger"},
 ];
 
-cont result = users.map((user) => {
+------------- // TEMPLATE LITERALS
+
+const result = users.map((user) => {
 	return `${user.firstname} ${user.lastname}`;
 });
 
 console.log(result);
 
 (3) ["Reinaldo Nani", "Pedro Cabral", "Fred Kruger"]
+0: "Reinaldo Nani"
+1: "Pedro Cabral"
+2: "Fred Kruger"
+length: 3
+__proto__: Array(0)
+
+----------- OR  Using // STRING CONCATENATION ------------------
+
+const resultC = users.map((user) => {
+	return user.firstname+' '+user.lastname;
+});
+
+(3) ["Reinaldo Nani", "Pedro Cabral", "Fred Kruger"]
 0: "Reinaldo Nani"
 1: "Pedro Cabral"
 2: "Fred Kruger"
