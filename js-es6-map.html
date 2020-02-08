@@ -1,0 +1,11 @@
+const users = [
+	{ firstname: "Reinaldo", lastname: "Nani"},
+	{ firstname: "Pedro", lastname: "Cabral"},
+	{ firstname: "Fred", lastname: "Kruger"},
+];
+
+cont result = users.map((user) => {
+	return `${user.firstname} $(user.lastname)`;
+});
+
+console.log(result);
